@@ -11,7 +11,6 @@
 * objects.
 *
 * TODO:
-* - pridat osetreny vyskytu znaku apostrof, uvozovky apod., které by poškodily PHP syntax vygenerovaného PHP souboru
 *
 */
 
@@ -63,7 +62,7 @@ foreach ($lexicon as $language => $data) {
         fwrite($handle, "\n");
         
         foreach ($data2 as $name => $value) {
-            fwrite($handle, "\$_lang['" . $name . "'] = '" . $value . "';\n");
+            fwrite($handle, "\$_lang['" . $name . "'] = '" . addslashes($value) . "';\n");
         }        
         fwrite($handle, '?>' . "\n");
         fclose($handle);
