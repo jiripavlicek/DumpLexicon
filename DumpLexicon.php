@@ -10,6 +10,9 @@
 * This script runs outside of MODx, but uses its config and xPDO
 * objects.
 *
+* TODO:
+* - pridat osetreny vyskytu znaku apostrof, uvozovky apod., které by poškodily PHP syntax vygenerovaného PHP souboru
+*
 */
 
 define('NAMESPACE_', 'hotpointclub');
