@@ -67,4 +67,10 @@ foreach ($lexicon as $language => $data) {
     }
 }
 
+if (count($lexicon)) {
+	echo 'MODX lexicon ' . NAMESPACE_ . ' exported to directory ' . PATH;
+} else {
+	echo 'MODX lexicon ' . NAMESPACE_ . ' is empty!';
+}
+
 ?>
