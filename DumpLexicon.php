@@ -7,33 +7,16 @@
 * This script dumps any MODX Revolution 2.x lexicon content from 
 * database to include files.
 *
-<<<<<<< HEAD
-* Note: If you are running this outside of MODx and testing it
-* in the Manager, it will log you out when it runs, even though
-* the Manager screen will still be visible. Actions taken in the
-* Manager (e.g., saving a snippet) will not be successful. After
-* running the script, reload the Manager page in your browser
-* and you will be prompted to log back in.
-=======
 * This script runs outside of MODx, but uses its config and xPDO
 * objects.
->>>>>>> undated description and readme
-*
 *
 */
 
 define('NAMESPACE_', 'hotpointclub');
 // define('ORDERBY', 'name'); // optional - order by name
-<<<<<<< HEAD
-
-define('PATH', './core/components/' . NAMESPACE_ . '/lexicon/');
-
-define(MODX_CORE_PATH, dirname(__FILE__) . '/../core/');
-=======
 define('PATH', './core/components/' . NAMESPACE_ . '/lexicon/');
 define(MODX_CORE_PATH, dirname(__FILE__) . '/../core/');
 
->>>>>>> undated description and readme
 include_once MODX_CORE_PATH . '/model/modx/modx.class.php';
 $modx= new modX();
 $modx->initialize('mgr');
