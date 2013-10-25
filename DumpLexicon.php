@@ -62,7 +62,7 @@ foreach ($lexicon as $language => $data) {
         foreach ($data2 as $name => $value) {
             fwrite($handle, "\$_lang['" . $name . "'] = '" . $value . "';\n");
         }        
-        fwrite($handle, '>' . "\n");
+        fwrite($handle, '?>' . "\n");
         fclose($handle);
     }
 }
